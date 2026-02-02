@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script defer src="script.js"></script>
+  <style>
+    .show{
+      display: flex !important;
+    }
+  </style>
+</head>
+<body class="relative">
+  <section class="flex w-full h-screen ">
+    <div class="w-1/16 h-full bg-gray-300 flex flex-col items-center justify-between py-4">
+      <div class="flex flex-col items-center gap-2">
+        <svg viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+        <svg viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+        <svg viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+        <svg viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+        
+      </div>
+      <div class="flex flex-col gap-2">
+        <svg viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+        <svg viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+        <svg viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+      </div>
+    </div>
+    <div class="w-5/16 h-full pt-3 bg-red-300 px-5 flex flex-col gap-2">
+      <div class="flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">WhatsApp</h1>
+        <div class="flex gap-3">
+          <svg viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+          <svg  viewBox="0 0 24 24" height="40" width="40" preserveAspectRatio="xMidYMid meet" class="setting-icon" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+        </div>
+      </div>
+      <div class="flex gap-2 items-center w-full px-3 py-1 bg-slate-200 rounded-full">
+        <svg viewBox="0 0 24 24" height="30" width="30" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+        <input class="p-1" type="text" placeholder="Search or new chat">
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="flex items-center justify-center bg-green-500 text-white rounded-full w-fit px-3 py-1 font-bold ">All</div>
+        <div class="flex items-center justify-center bg-green-500 text-white rounded-full w-fit px-3 py-1 font-bold ">Unread</div>
+        <div class="flex items-center justify-center bg-green-500 text-white rounded-full w-fit px-3 py-1 font-bold ">Favourites</div>
+        <div class="flex items-center justify-center bg-green-500 text-white rounded-full w-fit px-3 py-1 font-bold ">Groups</div>
+        
+      </div>
+      <div class="flex-col flex gap-3">
+        <div class="flex items-center gap-3">
+            <svg viewBox="0 0 24 24" height="30" width="30" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>chat-filled-refreshed</title><path fill-rule="evenodd" clip-rule="evenodd" d="M22.0002 6.66667C22.0002 5.19391 20.8062 4 19.3335 4H1.79015C1.01286 4 0.540213 4.86348 0.940127 5.53L3.00016 9V17.3333C3.00016 18.8061 4.19406 20 5.66682 20H19.3335C20.8062 20 22.0002 18.8061 22.0002 17.3333V6.66667ZM7.00016 10C7.00016 9.44772 7.44787 9 8.00016 9H17.0002C17.5524 9 18.0002 9.44772 18.0002 10C18.0002 10.5523 17.5524 11 17.0002 11H8.00016C7.44787 11 7.00016 10.5523 7.00016 10ZM8.00016 13C7.44787 13 7.00016 13.4477 7.00016 14C7.00016 14.5523 7.44787 15 8.00016 15H14.0002C14.5524 15 15.0002 14.5523 15.0002 14C15.0002 13.4477 14.5524 13 14.0002 13H8.00016Z" fill="currentColor"></path></svg>
+          <div class="flex justify-between items-center w-full">
+            <p>Archive</p>
+            <p>6</p>
+
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="flex items-center gap-3 w-full">
+          <img class="rounded-full w-[50px]" src="ava-beknur.png" alt="">
+          <div class="flex flex-col w-full text-gray-500">
+            <div class="flex justify-between w-full text-white">
+              <p class="font-bold">Beknur</p>
+              <p>8:05 PM</p>
+            </div>
+            wukir ozin kalaisyn
+          </div>
+          
+        </div>
+        
+        <div class="flex items-center gap-3 w-full">
+          <img class="rounded-full w-[50px]" src="ava-beknur.png" alt="">
+          <div class="flex flex-col w-full text-gray-500">
+            <div class="flex justify-between w-full text-white">
+              <p class="font-bold">Beknur</p>
+              <p>8:05 PM</p>
+            </div>
+            wukir ozin kalaisyn
+          </div>
+          
+        </div>
+        <div class="flex items-center gap-3 w-full">
+          <img class="rounded-full w-[50px]" src="ava-beknur.png" alt="">
+          <div class="flex flex-col w-full text-gray-500">
+            <div class="flex justify-between w-full text-white">
+              <p class="font-bold">Beknur</p>
+              <p>8:05 PM</p>
+            </div>
+            wukir ozin kalaisyn
+          </div>
+          
+        </div>
+        <div class="flex items-center gap-3 w-full">
+          <img class="rounded-full w-[50px]" src="ava-beknur.png" alt="">
+          <div class="flex flex-col w-full text-gray-500">
+            <div class="flex justify-between w-full text-white">
+              <p class="font-bold">Beknur</p>
+              <p>8:05 PM</p>
+            </div>
+            wukir ozin kalaisyn
+          </div>
+          
+        </div>
+        <div class="flex items-center gap-3 w-full">
+          <img class="rounded-full w-[50px]" src="ava-beknur.png" alt="">
+          <div class="flex flex-col w-full text-gray-500">
+            <div class="flex justify-between w-full text-white">
+              <p class="font-bold">Beknur</p>
+              <p>8:05 PM</p>
+            </div>
+            wukir ozin kalaisyn
+          </div>
+          
+        </div>
+        <div class="flex items-center gap-3 w-full">
+          <img class="rounded-full w-[50px]" src="ava-beknur.png" alt="">
+          <div class="flex flex-col w-full text-gray-500">
+            <div class="flex justify-between w-full text-white">
+              <p class="font-bold">Beknur</p>
+              <p>8:05 PM</p>
+            </div>
+            wukir ozin kalaisyn
+          </div>
+          
+        </div>
+        <div class="flex items-center gap-3 w-full">
+          <img class="rounded-full w-[50px]" src="ava-beknur.png" alt="">
+          <div class="flex flex-col w-full text-gray-500">
+            <div class="flex justify-between w-full text-white">
+              <p class="font-bold">Beknur</p>
+              <p>8:05 PM</p>
+            </div>
+            wukir ozin kalaisyn
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    <div class="w-10/16 h-full items-center flex flex-col justify-between " >
+      <div style="background-image: url(whatsapp-bg.jpg); " class="h-full flex flex-col justify-between items-center bg-contain">
+      <div class="flex  items-center justify-between w-full bg-black px-4 py-2">
+        <div class="text-white font-bold flex gap-2 items-center">
+          <img width="40px" class="rounded-full" src="ava-beknur.png" alt="">
+          Beknur
+        </div>
+        <div class="flex gap-3 items-center">
+          <img width="20px" class="download-app-icon" src="plus-symbol-button (1).png" alt="">
+          <img width="20px"  src="plus-symbol-button (1).png" alt="">
+          <img width="20px" class="chat-setting-icon" src="plus-symbol-button (1).png" alt="">
+          
+        </div>
+
+      </div>
+      <div class="text-center flex flex-col gap-3 items-center">
+        <p class="text-gray-400 text-sm bg-gray-950 px-2 w-fit rounded-lg py-1">Используйте WhatsApp на своем телефоне, чтобы просмотреть сообщения, отправленные до 11/3/2025.</p>
+        <p class="text-gray-400 text-sm bg-gray-950 px-2 w-fit py-1 rounded-lg">1/21/2026</p>
+        <p class="text-yellow-600 text-sm bg-gray-950 px-2 w-fit py-1 rounded-lg">Сообщения и звонки защищены сквозным шифрованием. Прочитать, <br> прослушать или переслать их могут только участники этого чата. Нажмите, <br> чтобы узнать подробнее</p>
+        <p class="text-gray-400 text-sm bg-gray-950 px-2 w-fit py-1 rounded-lg">Today</p>
+        <div class="flex flex-col  gap-2 self-end">
+          <div class="flex gap-1  bg-green-800 px-2 w-fit py-1 rounded-lg rounded-tr-none">
+          <p class="text-white text-lg ">Assalamu aleikum</p>
+          <div class="text-gray-400 flex text-sm items-center gap-1 self-end">
+            7:52 PM
+            <svg viewBox="0 0 16 11" height="11" width="16" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>msg-dblcheck</title><path d="M11.0714 0.652832C10.991 0.585124 10.8894 0.55127 10.7667 0.55127C10.6186 0.55127 10.4916 0.610514 10.3858 0.729004L4.19688 8.36523L1.79112 6.09277C1.7488 6.04622 1.69802 6.01025 1.63877 5.98486C1.57953 5.95947 1.51817 5.94678 1.45469 5.94678C1.32351 5.94678 1.20925 5.99544 1.11192 6.09277L0.800883 6.40381C0.707784 6.49268 0.661235 6.60482 0.661235 6.74023C0.661235 6.87565 0.707784 6.98991 0.800883 7.08301L3.79698 10.0791C3.94509 10.2145 4.11224 10.2822 4.29844 10.2822C4.40424 10.2822 4.5058 10.259 4.60313 10.2124C4.70046 10.1659 4.78086 10.1003 4.84434 10.0156L11.4903 1.59863C11.5623 1.5013 11.5982 1.40186 11.5982 1.30029C11.5982 1.14372 11.5348 1.01888 11.4078 0.925781L11.0714 0.652832ZM8.6212 8.32715C8.43077 8.20866 8.2488 8.09017 8.0753 7.97168C7.99489 7.89128 7.8891 7.85107 7.75791 7.85107C7.6098 7.85107 7.4892 7.90397 7.3961 8.00977L7.10411 8.33984C7.01947 8.43717 6.97715 8.54508 6.97715 8.66357C6.97715 8.79476 7.0237 8.90902 7.1168 9.00635L8.1959 10.0791C8.33132 10.2145 8.49636 10.2822 8.69102 10.2822C8.79681 10.2822 8.89838 10.259 8.99571 10.2124C9.09304 10.1659 9.17556 10.1003 9.24327 10.0156L15.8639 1.62402C15.9358 1.53939 15.9718 1.43994 15.9718 1.32568C15.9718 1.1818 15.9125 1.05697 15.794 0.951172L15.4386 0.678223C15.3582 0.610514 15.2587 0.57666 15.1402 0.57666C14.9964 0.57666 14.8715 0.635905 14.7657 0.754395L8.6212 8.32715Z" fill="currentColor"></path></svg>
+          </div>
+
+        </div>
+        <div class="flex gap-1  bg-green-800 px-2 w-fit py-1 rounded-lg rounded-tr-none">
+          <p class="text-white text-lg ">kalaisyn</p>
+          <div class="text-gray-400 flex text-sm items-center gap-1 self-end">
+            7:52 PM
+            <svg viewBox="0 0 16 11" height="11" width="16" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>msg-dblcheck</title><path d="M11.0714 0.652832C10.991 0.585124 10.8894 0.55127 10.7667 0.55127C10.6186 0.55127 10.4916 0.610514 10.3858 0.729004L4.19688 8.36523L1.79112 6.09277C1.7488 6.04622 1.69802 6.01025 1.63877 5.98486C1.57953 5.95947 1.51817 5.94678 1.45469 5.94678C1.32351 5.94678 1.20925 5.99544 1.11192 6.09277L0.800883 6.40381C0.707784 6.49268 0.661235 6.60482 0.661235 6.74023C0.661235 6.87565 0.707784 6.98991 0.800883 7.08301L3.79698 10.0791C3.94509 10.2145 4.11224 10.2822 4.29844 10.2822C4.40424 10.2822 4.5058 10.259 4.60313 10.2124C4.70046 10.1659 4.78086 10.1003 4.84434 10.0156L11.4903 1.59863C11.5623 1.5013 11.5982 1.40186 11.5982 1.30029C11.5982 1.14372 11.5348 1.01888 11.4078 0.925781L11.0714 0.652832ZM8.6212 8.32715C8.43077 8.20866 8.2488 8.09017 8.0753 7.97168C7.99489 7.89128 7.8891 7.85107 7.75791 7.85107C7.6098 7.85107 7.4892 7.90397 7.3961 8.00977L7.10411 8.33984C7.01947 8.43717 6.97715 8.54508 6.97715 8.66357C6.97715 8.79476 7.0237 8.90902 7.1168 9.00635L8.1959 10.0791C8.33132 10.2145 8.49636 10.2822 8.69102 10.2822C8.79681 10.2822 8.89838 10.259 8.99571 10.2124C9.09304 10.1659 9.17556 10.1003 9.24327 10.0156L15.8639 1.62402C15.9358 1.53939 15.9718 1.43994 15.9718 1.32568C15.9718 1.1818 15.9125 1.05697 15.794 0.951172L15.4386 0.678223C15.3582 0.610514 15.2587 0.57666 15.1402 0.57666C14.9964 0.57666 14.8715 0.635905 14.7657 0.754395L8.6212 8.32715Z" fill="currentColor"></path></svg>
+          </div>
+
+        </div>
+
+        </div>
+        <div class="flex flex-col gap-2 self-start">
+          <div class="flex gap-1  bg-gray-700 px-2 w-fit py-1 rounded-lg rounded-tl-none">
+          <p class="text-white text-lg ">ualeikum assalyam</p>
+          <div class="text-gray-400 flex text-sm items-center gap-1 self-end">
+            7:52 PM
+            <svg viewBox="0 0 16 11" height="11" width="16" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>msg-dblcheck</title><path d="M11.0714 0.652832C10.991 0.585124 10.8894 0.55127 10.7667 0.55127C10.6186 0.55127 10.4916 0.610514 10.3858 0.729004L4.19688 8.36523L1.79112 6.09277C1.7488 6.04622 1.69802 6.01025 1.63877 5.98486C1.57953 5.95947 1.51817 5.94678 1.45469 5.94678C1.32351 5.94678 1.20925 5.99544 1.11192 6.09277L0.800883 6.40381C0.707784 6.49268 0.661235 6.60482 0.661235 6.74023C0.661235 6.87565 0.707784 6.98991 0.800883 7.08301L3.79698 10.0791C3.94509 10.2145 4.11224 10.2822 4.29844 10.2822C4.40424 10.2822 4.5058 10.259 4.60313 10.2124C4.70046 10.1659 4.78086 10.1003 4.84434 10.0156L11.4903 1.59863C11.5623 1.5013 11.5982 1.40186 11.5982 1.30029C11.5982 1.14372 11.5348 1.01888 11.4078 0.925781L11.0714 0.652832ZM8.6212 8.32715C8.43077 8.20866 8.2488 8.09017 8.0753 7.97168C7.99489 7.89128 7.8891 7.85107 7.75791 7.85107C7.6098 7.85107 7.4892 7.90397 7.3961 8.00977L7.10411 8.33984C7.01947 8.43717 6.97715 8.54508 6.97715 8.66357C6.97715 8.79476 7.0237 8.90902 7.1168 9.00635L8.1959 10.0791C8.33132 10.2145 8.49636 10.2822 8.69102 10.2822C8.79681 10.2822 8.89838 10.259 8.99571 10.2124C9.09304 10.1659 9.17556 10.1003 9.24327 10.0156L15.8639 1.62402C15.9358 1.53939 15.9718 1.43994 15.9718 1.32568C15.9718 1.1818 15.9125 1.05697 15.794 0.951172L15.4386 0.678223C15.3582 0.610514 15.2587 0.57666 15.1402 0.57666C14.9964 0.57666 14.8715 0.635905 14.7657 0.754395L8.6212 8.32715Z" fill="currentColor"></path></svg>
+          </div>
+
+        </div>
+        <div class="flex gap-1  bg-gray-700 px-2 w-fit py-1 rounded-lg rounded-tl-none">
+          <p class="text-white text-lg ">wukir ozin kalaisyn</p>
+          <div class="text-gray-400 flex text-sm items-center gap-1 self-end">
+            7:52 PM
+            <svg viewBox="0 0 16 11" height="11" width="16" preserveAspectRatio="xMidYMid meet" class="" fill="none"><title>msg-dblcheck</title><path d="M11.0714 0.652832C10.991 0.585124 10.8894 0.55127 10.7667 0.55127C10.6186 0.55127 10.4916 0.610514 10.3858 0.729004L4.19688 8.36523L1.79112 6.09277C1.7488 6.04622 1.69802 6.01025 1.63877 5.98486C1.57953 5.95947 1.51817 5.94678 1.45469 5.94678C1.32351 5.94678 1.20925 5.99544 1.11192 6.09277L0.800883 6.40381C0.707784 6.49268 0.661235 6.60482 0.661235 6.74023C0.661235 6.87565 0.707784 6.98991 0.800883 7.08301L3.79698 10.0791C3.94509 10.2145 4.11224 10.2822 4.29844 10.2822C4.40424 10.2822 4.5058 10.259 4.60313 10.2124C4.70046 10.1659 4.78086 10.1003 4.84434 10.0156L11.4903 1.59863C11.5623 1.5013 11.5982 1.40186 11.5982 1.30029C11.5982 1.14372 11.5348 1.01888 11.4078 0.925781L11.0714 0.652832ZM8.6212 8.32715C8.43077 8.20866 8.2488 8.09017 8.0753 7.97168C7.99489 7.89128 7.8891 7.85107 7.75791 7.85107C7.6098 7.85107 7.4892 7.90397 7.3961 8.00977L7.10411 8.33984C7.01947 8.43717 6.97715 8.54508 6.97715 8.66357C6.97715 8.79476 7.0237 8.90902 7.1168 9.00635L8.1959 10.0791C8.33132 10.2145 8.49636 10.2822 8.69102 10.2822C8.79681 10.2822 8.89838 10.259 8.99571 10.2124C9.09304 10.1659 9.17556 10.1003 9.24327 10.0156L15.8639 1.62402C15.9358 1.53939 15.9718 1.43994 15.9718 1.32568C15.9718 1.1818 15.9125 1.05697 15.794 0.951172L15.4386 0.678223C15.3582 0.610514 15.2587 0.57666 15.1402 0.57666C14.9964 0.57666 14.8715 0.635905 14.7657 0.754395L8.6212 8.32715Z" fill="currentColor"></path></svg>
+          </div>
+
+        </div>
+
+        </div>
+        
+        
+        
+      </div>
+      <div class="mb-3 justify-self-end w-[95%] flex gap-4 items-center px-4 py-4 rounded-full text-white bg-gray-800">
+          <img width="20px" src="plus-symbol-button (1).png" alt="">
+          <img width="20px" src="plus-symbol-button (1).png" alt="">
+          <input type="text" class="w-[700px] p-1 border-none " placeholder="Write message">
+          <img width="20px" src="plus-symbol-button (1).png" alt="">
+
+
+        </div>
+    </div>
+
+    </div>
+    
+  </section>
+  <div class="absolute top-15 workspace-setting  hidden left-105 flex-col gap-2 bg-black p-3 border-gray-300 border rounded-lg">
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Новая группа
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Избранные сообщения
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Выбрать чаты
+    </div>
+    <div class="flex items-center gap-2 text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Пометить всё как прочитанное
+    </div>
+    
+    <div class="flex items-center gap-2 border-t pt-1  border-gray-400  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Выйти
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Блокировка приложения
+    </div>
+    
+  </div>
+  
+  <div class="absolute hidden top-15 right-5 flex-col chat-setting gap-2 bg-black p-3 border-gray-300 border rounded-lg">
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Данные контакта
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Выбрать сообщения
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Без звука
+    </div>
+    <div class="flex items-center gap-2 text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Исчезающие сообщения
+    </div>
+    
+    <div class="flex items-center gap-2   text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Add to favourites
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Закрыть окно чата
+    </div>
+    <div class="flex items-center gap-2 border-t  border-gray-400 pt-1  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Пожаловаться
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Заблокировать
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Очистить чат
+    </div>
+    <div class="flex items-center gap-2  text-white">
+      <img width="15px" src="plus-symbol-button (1).png" alt="">
+        Удалить чат
+    </div>
+    
+  </div>
+  <div class="download-inf hidden right-20  p-4 top-14  absolute rounded-lg items-center gap-5 bg-slate-700 w-fit">
+    <div>
+      <h1 class="text-white text-lg">
+        Делайте звонки в приложении для <br> Windows
+      </h1>
+      <p class="text-gray-500 text-sm">Чтобы совершать звонки, скачайте <br> WhatsApp для Windows.</p>
+    </div>
+    <button class="bg-green-500 text-sm rounded-full px-7 font-bold py-1">Download app</button>
+  </div>
+</body>
+</html>
